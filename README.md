@@ -3,9 +3,28 @@
 把**本次会话前文**的某一轮问答引用到正在写的消息里。用于需求跑偏时"重新提交上下文"：
 发现方向不对，把当初那句需求（或当时的方案结论）@ 回来，让模型以原文为准继续。
 
-Quote an earlier turn of the current conversation into the composer with an `@` mention.
-The pick stays a compact chip in the draft; the picked turn's text is attached to the
-message you send, so the model can be re-anchored on what was actually asked before.
+Quote an earlier turn of the current conversation into the composer with an `@` mention —
+**by turn, not by selected text**. The pick stays a compact chip in the draft; the picked
+turn's text is attached to the message you send, so the model can be re-anchored on what was
+actually asked before.
+
+## 与其他插件的区别 / How it differs
+
+写之前对着市场索引查过同类（2026-11-07 快照，4704 条），三类近邻都不是同一件事：
+
+| 同类 / Neighbour | 例子 / Examples | 与本插件的区别 / Difference |
+| --- | --- | --- |
+| 扩展 `@` 菜单的引用来源 | `dsh-reference-anything`、`dsh-expert` | 引用的是**别的会话、别的 AI 的历史**或专家名册；本插件引用的是**本次会话自己的前文** |
+| 把**选中的文字/代码**变成引用 | `dsh-client-ui-quote`、`dsh-cherry-quote`、`dsh-quote-reply`、`@kialajin/dsh-quote-selection` | 要先手动选中一段；本插件按**轮次**（`第N轮·我` / `第N轮·助手`）整条引用，不用选 |
+| 会话回退 / 重发 | `dsh-session-rewind`、`@anionex/dsh-turn-rewind`、`@jochenyang/dsh-rewind-plugin` | 回退会把那一轮**从对话里撤回/删除**；本插件**不删任何东西**，只是把那轮原文附进当前这条消息 |
+
+一句话：**按轮次引用，而不是按选中文字；是引用，不是回退。**
+
+Three differences in one line: it quotes a whole earlier **turn** (not a text selection), it
+quotes from the **current** conversation (not another session or another AI's chat), and it
+**adds** the turn to your new message instead of rewinding the conversation.
+
+（查重结果：在其描述里出现“上一轮/上一条消息”语义的条目 **0** 个，同时含“当前会话”的 **0** 个。）
 
 ## 安装
 
