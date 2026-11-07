@@ -1,49 +1,54 @@
 {
-  "name": "dsh-turn-quote",
-  "version": "0.1.0",
-  "description": "Quote an earlier turn of the current conversation into the composer with an @ mention — a DeepSeek Harness bundle.",
-  "type": "module",
-  "license": "MIT",
-  "author": "王国栋",
-  "keywords": [
-    "dsh-plugin",
-    "deepseek-harness",
-    "dsh",
-    "composer",
-    "mention",
-    "quote",
-    "context"
-  ],
-  "engines": {
-    "dsh": ">=0.2.1-rc.5 <0.3.0"
-  },
-  "exports": {
-    ".": "./index.js",
-    "./client": "./client.js",
-    "./locale/*.json": "./locale/*.json",
-    "./icon": "./icon.svg"
-  },
-  "files": [
-    "index.js",
-    "client.js",
-    "cordis.patch.yml",
-    "locale/*.json",
-    "icon.svg",
-    "README.md",
-    "LICENSE"
-  ],
-  "dsh": {
-    "bundle": {
-      "patch": "./cordis.patch.yml"
-    },
-    "client": {
-      "platform": "web",
-      "immediately": true,
-      "inject": [
-        "@deepseek-ai/dsh-client-locale",
-        "@deepseek-ai/dsh-client-ui-conversation",
-        "@deepseek-ai/dsh-client-ui-input-trigger"
-      ]
-    }
-  }
+    "name":  "dsh-turn-quote",
+    "version":  "0.1.0",
+    "description":  "Quote an earlier turn of the current conversation into the composer with an @ mention — a DeepSeek Harness bundle.",
+    "type":  "module",
+    "license":  "MIT",
+    "author":  "王国栋",
+    "keywords":  [
+                     "dsh-plugin",
+                     "deepseek-harness",
+                     "dsh",
+                     "composer",
+                     "mention",
+                     "quote",
+                     "context"
+                 ],
+    "engines":  {
+                    "dsh":  "\u003e=0.2.1-rc.5 \u003c0.3.0"
+                },
+    "exports":  {
+                    ".":  "./index.js",
+                    "./client":  "./client.js",
+                    "./locale/*.json":  "./locale/*.json",
+                    "./icon":  "./icon.svg"
+                },
+    "files":  [
+                  "index.js",
+                  "client.js",
+                  "cordis.patch.yml",
+                  "locale/*.json",
+                  "icon.svg",
+                  "assets/*.png",
+                  "README.md",
+                  "LICENSE"
+              ],
+    "dsh":  {
+                "bundle":  {
+                               "patch":  "./cordis.patch.yml"
+                           },
+                "client":  {
+                               "platform":  "web",
+                               "immediately":  true,
+                               "inject":  [
+                                              "@deepseek-ai/dsh-client-locale",
+                                              "@deepseek-ai/dsh-client-ui-conversation",
+                                              "@deepseek-ai/dsh-client-ui-input-trigger"
+                                          ]
+                           }
+            },
+    "repository":  {
+                       "type":  "git",
+                       "url":  "https://github.com/bzsang/dsh-turn-quote.git"
+                   }
 }
