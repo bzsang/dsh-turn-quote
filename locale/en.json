@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Quote Earlier Turns",
+    "description": "Type @ in the composer to reference an earlier turn of this conversation; the picked turn stays a compact chip in the draft and its content is attached to the message you send."
+  }
+}

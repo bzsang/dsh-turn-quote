@@ -1,0 +1,9 @@
+# Dependencies are never committed for this bundle (it has none).
+node_modules/
+
+# Build output from `npm pack` / `pnpm pack`.
+*.tgz
+
+# Local editor / OS noise.
+.DS_Store
+Thumbs.db

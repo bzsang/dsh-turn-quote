@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Quote earlier turns">
+  <rect x="4" y="8" width="56" height="40" rx="12" fill="#2F6FED"/>
+  <path d="M18 48h10l-6 8z" fill="#2F6FED"/>
+  <path d="M19 22.5c0-2.5 2-4.5 4.5-4.5H25v5h-1.5c-.6 0-1 .4-1 1v2H25v9h-6V22.5z" fill="#ffffff"/>
+  <path d="M34 22.5c0-2.5 2-4.5 4.5-4.5H40v5h-1.5c-.6 0-1 .4-1 1v2H40v9h-6V22.5z" fill="#ffffff"/>
+</svg>
