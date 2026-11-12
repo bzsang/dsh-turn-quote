@@ -4,7 +4,7 @@
   "description": "Quote earlier turns of the current conversation into the composer from the @ menu — single turns, whole Q&A turns, or the last few turns, with body search — a DeepSeek Harness bundle.",
   "type": "module",
   "license": "MIT",
-  "author": "王国栋",
+  "author": "Guodong Wang",
   "keywords": [
     "dsh-plugin",
     "deepseek-harness",
