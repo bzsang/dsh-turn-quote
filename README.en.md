@@ -142,4 +142,4 @@ events):
 
 ## License
 
-MIT © 2026 王国栋
+MIT © 2026 Guodong Wang
